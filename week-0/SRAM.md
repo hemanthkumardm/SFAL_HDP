@@ -1,6 +1,6 @@
-# 📦 SRAM in Caravel
+#  SRAM in Caravel
 
-## 📘 Overview
+##  Overview
 
 Caravel includes two primary SRAM memory blocks to support embedded system operations:
 1. **Management Area SRAM**
@@ -10,7 +10,7 @@ These SRAM modules are integral to enabling both the **management SoC** and **us
 
 ---
 
-## 🧠 1. Management Area SRAM
+##  1. Management Area SRAM
 
 - **Size**: 256 words × 32 bits  
 - **Access**: Accessible by the management SoC.
@@ -35,7 +35,7 @@ These SRAM modules are integral to enabling both the **management SoC** and **us
 
 ---
 
-## ⚙️ Technical Integration
+##  Technical Integration
 
 - The Wishbone interface acts as the main communication bridge for reading and writing to storage SRAM.
 - Users can customize SRAM usage depending on the requirements of their project.
@@ -43,13 +43,13 @@ These SRAM modules are integral to enabling both the **management SoC** and **us
 
 ---
 
-## 📌 Note
+##  Note
 
 Additional memory blocks **above the base SRAM address** may exist in future versions or custom implementations, but their **size and location are currently TBD (To Be Determined).**
 
 ---
 
-## 📂 Source Code References
+##  Source Code References
 
 The SRAM modules and Wishbone interfaces can be explored in the [Caravel GitHub repository](https://github.com/efabless/caravel):
 
@@ -59,7 +59,7 @@ The SRAM modules and Wishbone interfaces can be explored in the [Caravel GitHub 
 
 ---
 
-## 🛠️ To-Do (for Custom SCL180 SRAM)
+##  To-Do (for Custom SCL180 SRAM)
 
 If you're planning to integrate a **custom SRAM in SCL180 technology**:
 - Create a compatible **Verilog model** or macro for simulation.
@@ -69,7 +69,6 @@ If you're planning to integrate a **custom SRAM in SCL180 technology**:
 
 ---
 
-## 🧾 Credits
+##  Credits
 
 - Based on official documentation from [efabless/caravel](https://github.com/efabless/caravel)
-- Analyzed and adapted for documentation by Hemanth Kumar DM
