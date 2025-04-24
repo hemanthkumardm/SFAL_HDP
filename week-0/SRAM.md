@@ -47,7 +47,7 @@ These SRAM modules are integral to enabling both the **management SoC** and **us
 The SRAM modules and Wishbone interfaces can be explored in the [Caravel GitHub repository](https://github.com/efabless/caravel):
 
 - SRAM control logic: `verilog/rtl/`
-- Wishbone interface: `verilog/rtl/wb_interconnect.v`
+- Wishbone interface: `verilog/dv/wb_utests`
 - Management SoC memory mapping: `verilog/rtl/mgmt_core.v`
 
 ---
