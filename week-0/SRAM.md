@@ -13,7 +13,6 @@ These SRAM modules are integral to enabling both the **management SoC** and **us
 ##  1. Management Area SRAM
 
 - **Size**: 256 words × 32 bits  
-- **Access**: Accessible by the management SoC.
 - **Base Address**: `0x0000_0000`
 - **Purpose**:  
   Acts as the primary local memory for the management core (a small embedded RISC-V SoC inside Caravel). It is used to store critical configuration, runtime variables, or temporary code during system operation.
@@ -40,12 +39,6 @@ These SRAM modules are integral to enabling both the **management SoC** and **us
 - The Wishbone interface acts as the main communication bridge for reading and writing to storage SRAM.
 - Users can customize SRAM usage depending on the requirements of their project.
 - The design assumes the developer might map additional SRAM or memory peripherals in future Caravel derivatives.
-
----
-
-##  Note
-
-Additional memory blocks **above the base SRAM address** may exist in future versions or custom implementations, but their **size and location are currently TBD (To Be Determined).**
 
 ---
 
